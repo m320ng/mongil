@@ -107,6 +107,7 @@ var srlib = {
 			} catch (e) {
 				console.log('server-push-exception');
 				console.log(e.toString());
+				console.log(result);
 				callback(false, {err:-2, reason:'script-exception'});
 				return;
 			}

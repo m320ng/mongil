@@ -48,9 +48,9 @@ function gamebox(userid, cookie) {
 		std.title('[login]');
 
 		var param = {
-			userid: '',
+			userid: userid,
 			img_url: 'jIAD+QohLrII5WLVqx/iG1gJVb8ms0ven6O07cLJt3jaFOrOFufikopxQir/LhFAuhcvZHc4j/4yo2fEIlvlTGCsk9jwVf0SQYNGcWB42Sj4W3tec1OdkZdcwEdqE2jkkEzNgcAI/4kmzBLN+uiL/PcUJkuTf7urXqSkZOImdtQv33cnfz3cl6C4ljUJJeplSfCUPxJE1qe8q/TmcLx7b06yYRKd+8NTsuDsvKbRRv3cpBRZ+9Q+KJji5+pQSioP',
-			ver: '2.08',
+			ver: '2.09',
 			platform: 'Android',
 			cookie: cookie
 		};
@@ -452,9 +452,9 @@ function gamebox(userid, cookie) {
 					gameRound = rand(70, 90);
 					gameTime = gameRound * 5;
 					var delayTime = gameTime;
-					if (gameInfo.detail.life > 0) {
+					//if (gameInfo.detail.life > 0) { //걍10초
 						delayTime = 10;
-					}
+					//}
 
 					waitTime = 10 * 60 - delayTime;
 					console.log(delayTime+'초 소요 (기록은 '+gameTime+'초)');
